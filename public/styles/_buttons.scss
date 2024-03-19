@@ -1,0 +1,18 @@
+.playButton{
+    width: 60px;
+    height: 25px;
+    background-color: $color-white;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    cursor:pointer;
+
+
+    &:hover {
+        background-color:rgb(83, 45, 121);
+        color: white;
+    }
+}

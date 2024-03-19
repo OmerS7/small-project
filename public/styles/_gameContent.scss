@@ -1,0 +1,92 @@
+
+.playScreen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    width: 550px;
+    border-radius: 20px;
+    box-shadow: $shadow;
+
+    h1{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .playScreen {
+        font-size: 12px;
+        width: 300px;
+        color: red;
+    }
+
+    h1 {
+        margin-right: -20px;
+    }
+
+    .icon {
+        font-size: 60px; /* Verklein de lettergrootte voor kleinere schermformaten */
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .playScreen{
+        width: 300px;
+        color: red;
+    }
+}
+
+.icon{
+    font-size: 80px;
+    // cursor: pointer;
+}
+
+.icon:hover {
+    color: $color-purple-transparant;
+}
+
+.selected {
+    color: $color-purple;
+}
+
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(-5deg); }
+    75% { transform: rotate(3deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.icons{
+    display: flex;
+}
+
+.icon:hover{
+    animation: wiggle 1s ease-in-out infinite;
+}
+
+.rock{
+    transform: rotate(90deg);
+    padding: 10px;
+}
+
+.paper, .scissor{
+    padding: 10px;
+}
+
+.computerChoice{
+    margin-bottom: 20px;
+}
+
+.result {
+    margin-top: 10px;
+}
+
+.score{
+    display: flex;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: 50px;
+}

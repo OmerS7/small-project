@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/styles.css">
+
+
+    <title>Rock Paper Scissor</title>
+</head>
+<body>
+    <nav>
+        <ul>
+        <li><i class="fa-solid fa-gamepad"></i></li>
+        </ul>
+        <ul class="iconsRight">
+            <div class="containerFlashlight">
+                <button class="flashlight" onclick="myFunction()" title="Dark mode">
+                    <i class="fa-regular fa-lightbulb"></i>
+                </button>
+            </div>
+            <li class="refreshGame"><a href="#" title="Restart" id="restartGameLink"><i class="fa-solid fa-rotate-right"></i></a></li>
+        </ul>
+    </nav>
+
+    <content>
+        <h1>Rock Paper Scissors</h1>
+        <div class="playScreen">
+            <h2>Choose a move and press 'Play'</h2>
+            <div id="icons" class="icons">
+                <div class="rock">
+                    <i class="fas fa-hand-fist icon" data-choice="hand-fist" title="Rock"></i>
+                </div>
+                <div class="paper">
+                    <i class="fas fa-hand icon" data-choice="hand" title="Paper"></i>
+                </div>
+                <div class="scissor">
+                    <i class="fas fa-hand-scissors icon" data-choice="hand-scissors" title="Scissor"></i>
+                </div>
+            </div>
+            <button class="playButton" id="playButton">Play</button>
+            <div id="resultHand"></div>
+            <div id="computerChoice" class="computerChoice"> <span id="computerChoiceIcon"></span></div>
+            <div id="resultComputer" class="resultComputer"></div>
+            <div id="result" class="result"></div>
+            <div class="score">
+                <div id="playerScore"></div>
+                <div id="computerScore"></div>
+             </div>
+        </div>
+
+    </content>
+
+    <footer>
+        <p class="footerTekst">
+            Game made by Ömer
+        </p>
+        <div class="midFooter">
+        <a href="https://github.com/OmerS7?tab=repositories" target="_blank">
+            <div class="githubIcon"><i class="fa-brands fa-github"></i></div>
+        </a>
+        <a href="https://www.linkedin.com/in/omer-seker/" target="_blank">
+            <div class="linkedInIcon"><i class="fa-brands fa-linkedin"></i></div>
+        </a>
+        </div>
+        <p class="footerTekst2">
+            copyright&copy;Ömer
+        </p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/b766139ca2.js" crossorigin="anonymous"></script>
+    <script src="javascript/main.js"></script>
+    <script src="javascript/tooltip.js"></script>
+</body>
+</html>
